@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revered Care - More Than Just Love</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #4FB3CF;
+            --dark-gray: #333333;
+            --light-gray: #F5F5F5;
+        }
+
+        body {
+            background: linear-gradient(135deg, #4FB3CF 0%, #2980b9 100%);
+        }
+
+        .menu-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            transition: 0.3s;
+            z-index: 99;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .floating-content {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Menu Button -->
+    <div class="menu-btn bg-white p-2 rounded-lg shadow-lg">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu pt-20">
+        <div class="flex flex-col text-white space-y-4 px-6">
+            <a href="#home" class="hover:text-blue-400 transition">Home</a>
+            <a href="#about" class="hover:text-blue-400 transition">About</a>
+            <a href="#services" class="hover:text-blue-400 transition">Services</a>
+            <a href="#strengths" class="hover:text-blue-400 transition">Strengths</a>
+            <a href="#clientele" class="hover:text-blue-400 transition">Clientele</a>
+            <a href="#success" class="hover:text-blue-400 transition">Success</a>
+            <a href="#leadership" class="hover:text-blue-400 transition">Leadership</a>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">More Than Just Love</h1>
+                <p class="text-xl mb-8">Professional Healthcare Services at Your Doorstep</p>
+                <a href="#contact" class="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+                    Get Care Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">About Revered Care</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Overview</h3>
+                    <p class="mb-4">Revered Care is a leading private employment agency specializing in the meticulous recruitment and placement of dedicated, skilled, and compassionate care workers in the healthcare industry. With an unwavering commitment to excellence, Revered Care is dedicated to enhancing the quality of care for aging populations and individuals in need of specialized assistance.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Mission Statement</h3>
+                    <p>Empowering lives by connecting exceptional care workers with those in need, ensuring unparalleled support, and fostering a nurturing environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Services</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Caregiver Recruitment</h3>
+                    <p>Tailored selection and placement of highly qualified caregivers across various healthcare settings.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Training Programs</h3>
+                    <p>Customized training sessions designed to elevate the skills and expertise of care professionals.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Consultation Services</h3>
+                    <p>Advisory support to healthcare facilities and individuals seeking guidance in care services optimization.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Community Engagement</h3>
+                    <p>Organizing engaging activities and programs aimed at promoting holistic well-being among seniors and care recipients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Strengths Section -->
+    <section id="strengths" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Key Strengths</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Expertise & Specialization</h3>
+                    <p>Extensive experience and specialization in recruiting caregivers for diverse healthcare needs.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Quality Assurance</h3>
+                    <p>Rigorous vetting processes ensuring only the most skilled and compassionate caregivers are placed.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Personalized Approach</h3>
+                    <p>Tailored solutions matching caregivers' skills with the unique requirements of clients and facilities.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Innovative Solutions</h3>
+                    <p>Integration of cutting-edge technology for streamlined operations and enhanced care services.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Community Commitment</h3>
+                    <p>Active involvement in community initiatives, fostering a culture of care beyond placements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientele Section -->
+    <section id="clientele" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Clientele</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Healthcare Facilities</h3>
+                    <p>Nursing Homes, Assisted Living Centers, Hospitals</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Individual Clients</h3>
+                    <p>Seeking Home Care Services</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Community Organizations</h3>
+                    <p>Focused on Senior Care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Success Stories</h2>
+            <p>Revered Care has facilitated countless successful placements, enriching the lives of both care recipients and caregivers. We are recognized for consistently providing top-quality care workers who positively impact the lives of those they serve.</p>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Leadership</h2>
+            <div class="text-center">
+                <p>Founder & CEO: MASHAO THAPELO NEL</p>
+                <p>A visionary leader with 5 years of experience in the healthcare and recruitment sectors, dedicated to transforming the caregiving industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4">Business Details</h3>
+                    <p class="mb-2">Company Registration: K202192947707</p>
+                    <p class="mb-4">Address: Antea Flats Block C 311 Maraisburg Road 2093</p>
+                    <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                    <p class="mb-2">Phone: 0718390403</p>
+                    <p>Email: nelthapelo@gmail.com</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" class="w-full p-2 border rounded-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full p-2 border rounded-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Message</label>
+                            <textarea class="w-full p-2 border rounded-lg h-32" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <p>© 2025 Revered Care. More Than Just Love.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu Toggle
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.nav-menu') && !e.target.closest('.menu-btn')) {
+                document.querySelector('.nav-menu').classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
